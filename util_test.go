@@ -16,6 +16,7 @@ func TestShopFullName(t *testing.T) {
 		{"myshop ", "myshop.myshopify.com"},
 		{"myshop \n", "myshop.myshopify.com"},
 		{"myshop.myshopify.com", "myshop.myshopify.com"},
+		{"my-custom-shop.com", "my-custom-shop.com"},
 	}
 
 	for _, c := range cases {
