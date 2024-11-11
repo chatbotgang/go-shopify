@@ -14,6 +14,9 @@ func ShopFullName(name string) string {
 	if strings.Contains(name, "myshopify.com") {
 		return name
 	}
+	if strings.Contains(name, ".") {
+		return name
+	}
 	return name + ".myshopify.com"
 }
 
